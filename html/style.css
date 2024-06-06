@@ -1,0 +1,7 @@
+body {
+    margin: 0;
+    text-align: center;
+    color: white;
+    text-shadow:  2px 2px grey;
+    background-image: url('img/inf112Map.png');
+}
