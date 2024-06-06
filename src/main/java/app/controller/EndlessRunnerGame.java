@@ -11,7 +11,6 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 
-import app.sound.Sound;
 import app.model.GameState;
 import app.model.GameWorld;
 import app.utils.Constants;
@@ -57,8 +56,7 @@ public class EndlessRunnerGame extends ApplicationAdapter implements GameWorldLi
         });
 
         setupInputProcessor();
-    
-        Sound.initializeSounds();
+
     }
 
     @Override

@@ -166,10 +166,10 @@ public class Constants {
 
     // View
     public static final int TILE_MAP_SPEED = 200;
-    public static final String TILE_MAP_PATH = "src/main/resources/loveGameMap.tmx";
+    public static final String TILE_MAP_PATH = "loveGameMap.tmx";
 
     // Sound
     public static final List<Pair<String, SoundEvent>> SOUND_FILE_PATHS = Arrays.asList(
-        new Pair<>("./src/main/resources/lyd/hit_sound.wav",  SoundEvent.PLAYER_HIT)
+        new Pair<>("/lyd/hit_sound.wav",  SoundEvent.PLAYER_HIT)
         );
 }

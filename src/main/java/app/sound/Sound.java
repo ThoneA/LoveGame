@@ -9,9 +9,8 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 import app.utils.Constants;
 import app.utils.Pair;
 
-import java.io.File;
 import java.io.IOException;
-
+import java.net.URL;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.List;
@@ -46,8 +45,8 @@ public class Sound {
         try {
             for (Pair<String, SoundEvent> pair : filePaths) {
                 String path = pair.a();
-                File file = new File(path);
-                AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(file);
+                URL audioResource = Sound.class.getResource(path);
+                AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(audioResource);
                 Clip clip = AudioSystem.getClip();
                 clip.open(audioInputStream);
                 SoundEvent event = pair.b();
