@@ -47,3 +47,4 @@ scores.txt
 
 node_modules/
 
+!AngelRun.jar
