@@ -4,7 +4,6 @@ import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
 
 import app.controller.EndlessRunnerGame;
-import app.sound.Sound;
 import app.utils.Constants;
 
 /**
@@ -16,7 +15,6 @@ public class Main {
         Lwjgl3ApplicationConfiguration cfg = new Lwjgl3ApplicationConfiguration();
         cfg.setTitle("Endless Runner");
         cfg.setWindowedMode(Constants.BOARD_WIDTH, Constants.BOARD_HEIGHT);
-        Sound.initializeSounds();
         
         new Lwjgl3Application(new EndlessRunnerGame(), cfg);
     }
