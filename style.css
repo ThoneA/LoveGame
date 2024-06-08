@@ -2,6 +2,18 @@ body {
     margin: 0;
     text-align: center;
     color: white;
-    text-shadow:  2px 2px grey;
+    text-shadow: 2px 2px grey;
     background-image: url('img/inf112Map.png');
+}
+
+.link {
+    margin: 50px;
+}
+
+a {
+    color: white;
+    background-color: rgb(146, 54, 102);
+    padding: 14px 25px;
+    text-shadow: 0 0;
+    text-decoration: none;
 }
